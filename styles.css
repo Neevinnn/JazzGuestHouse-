@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #f4f4f4; /* Light Gray Text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #e4d2ba; /* Light Brown */
+    color: #2e2e2e; /* Dark Text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1em;
+    margin: 5px 0 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #3e3e3e; /* Darker Gray */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f4; /* Light Text */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e4d2ba; /* Light Brown Hover */
+    color: #2e2e2e; /* Dark Text Hover */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+section#home {
+    background-image: url('images/maldives.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+section#home h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+section#home p {
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #3a3a3a; /* Slightly lighter Gray */
+}
+
+.gallery img {
+    max-width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Section */
+form {
+    background-color: #e4d2ba; /* Light Brown */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #e4d2ba;
+    outline: none;
+    background-color: #ffffff;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #e4d2ba; /* Light Brown */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e4d2ba;
+    color: #2e2e2e;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2e2e2e; /* Dark Gray */
+    color: #f4f4f4; /* Light Text */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .gallery img {
+        max-width: 45%;
+    }
+
+    section#home h2 {
+        font-size: 2.5em;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
